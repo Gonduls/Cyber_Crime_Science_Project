@@ -8,7 +8,7 @@ if(len(sys.argv) != 2):
     print("Missing input file")
     raise Exception
 
-output_folder_name = './' + datetime.now().strftime("%Y%m%d_%H:%M")[2:]+ '_' + sys.argv[1].split('/')[-1]
+output_folder_name = '../' + datetime.now().strftime("%Y%m%d_%H:%M")[2:]+ '_' + sys.argv[1].split('/')[-1][:-4]
 os.mkdir(output_folder_name)
 
 def generateFileName(patterns : list[str]) -> str:
