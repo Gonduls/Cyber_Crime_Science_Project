@@ -20,10 +20,9 @@ def cleanFile(file):
     for line in open(path + "/" + file, "r"):
         lines.add(line.strip())
     
-    if len(lines) > 20:
-        with open(new_path + "/" + file, "w") as f:
-            for line in lines:
-                f.write(line + "\n")
+    with open(new_path + "/" + file, "w") as f:
+        for line in lines:
+            f.write(line + "\n")
 
 # for every file in the folder create a new thread that does function cleanFile(file)
 threads = []
