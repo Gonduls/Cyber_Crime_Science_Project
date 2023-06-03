@@ -1,8 +1,11 @@
+# Desc: Copies the first #lines from source to dest
+# Usage: python3 copy_#lines_source_dest.py <#lines> <inputfile> <outputfile>
+
 import sys
 
 if len(sys.argv) != 4:
     print("Usage: python3 copy_#lines_source_dest.py <#lines> <inputfile> <outputfile>")
-    exit
+    exit(1)
 
 print(sys.argv[1], sys.argv[2], sys.argv[3])
 num = int(sys.argv[1])

@@ -1,3 +1,8 @@
+### This script is used to scan a file with passwords and count the number of passwords that match a certain pattern
+# It also creates a file for all passwords were no pattern was found (bruteforces.txt)
+# Usage: python3 fastScan.py <file_with_passwords>
+# Note: the output can be very long, so it is recommended to redirect it to a file or to pipe it to "more" or "less"
+
 import sys
 from zxcvbn import zxcvbn
 import numpy as np

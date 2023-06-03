@@ -1,3 +1,7 @@
+# Extracts the usernames from the input file and writes them to the output file
+# The input file must be in the format username:password1[:password2...]
+# Usage: python3 user_extract.py <input_file> <output_file>
+
 import sys
 
 if len(sys.argv) != 3:

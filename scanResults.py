@@ -1,3 +1,10 @@
+# It takes a file with passwords as input and creates a folder with the following files:
+# - general.txt: contains statistics about the passwords in the input file
+# - <pattern1>_<pattern2>_..._<patternN>.txt: contains all the passwords that have the patterns pattern1, pattern2, ..., patternN
+# (patterns are abbreviated to 4 characters)
+# The output folder is named with the date and time of the execution + the name of the input file (without the extension .txt)
+# Usage: python3 scanResults.py <input_file>
+
 import sys
 import os
 from zxcvbn import zxcvbn

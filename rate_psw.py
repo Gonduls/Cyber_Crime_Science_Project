@@ -1,3 +1,7 @@
+# Description: This script takes a folder with password files and outputs the amount of passwords with each score
+# At the end of the output file it also outputs the total amount of passwords for each score
+# Usage: python3 rate_psw.py <path to folder with password files> <output file name>
+
 from zxcvbn import zxcvbn
 import sys
 import os

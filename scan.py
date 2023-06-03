@@ -1,3 +1,6 @@
+# Like fastScan.py, but also ouputs more statistics and uses a wordlist to check for dictionary words, sadly hardcoded
+# It does the scan for every file specified in input
+
 import sys
 from zxcvbn import zxcvbn
 import numpy as np

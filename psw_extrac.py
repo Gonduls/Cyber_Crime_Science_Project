@@ -1,8 +1,11 @@
+# File to extract passwords from a file containing username:password1[:password2...]
+# Usage: python3 psw_extract.py <input_file> <output_file>
+
 import sys
 
 if len(sys.argv) != 3:
     print("Missing input and output files")
-    exit
+    exit(1)
 
 i = 0
 j = 0

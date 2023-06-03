@@ -1,5 +1,4 @@
 import sys
-import re
 
 
 # detect the 10 most used passwords from a text file given as input from command line and print them out in order of most used to least used

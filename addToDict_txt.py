@@ -1,3 +1,7 @@
+# Purpose: This script takes two folders as input and compares the files in the first folder with the files in the second folder.
+# If a password in a file in the first folder is also in a file in the second folder, it is removed from the file in the first folder and added to a file called dict.txt in the first folder.
+# Usage: python3 addToDict_txt.py <folder_with_files> <folder_with_dictionaries>
+
 import os
 import sys
 import threading
